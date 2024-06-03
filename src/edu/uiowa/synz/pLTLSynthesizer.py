@@ -94,7 +94,7 @@ def synthesize_pLTL(_size, _count, AP_Lit, _algo_type, solver_type, result_file,
         logging.info('Synthesized Signatures:')
         fml_count = 1
         for synf in _result: 
-            synFml = '(%d) %s'%(fml_count, synf)
+            synFml = '(%d) %s'%(fml_count, synf) # synthesize formulas as synf
             
             result_file.write(synFml+'\n')
             logging.info(synFml)
